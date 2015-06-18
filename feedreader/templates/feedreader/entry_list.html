@@ -12,9 +12,9 @@
                     </p>
                     <p>{{ entry.description|safe }}</p>
                     <p> Relevant Articals <p>
-                    <p>{{ entry.FisrtRevelant.title|safe}}</p>
-                    <p>{{ entry.SecondRevelant.title|safe}}</p>
-                    <p>{{ entry.ThirdRevelant.title|safe}}</p>
+                    <p><a href="{{ entry.FisrtRevelant.link }}">{{ entry.FisrtRevelant.title|safe }}</p>
+                    <p><a href="{{ entry.SecondRevelant.link }}">{{ entry.SecondRevelant.title|safe }}</p>
+                    <p><a href="{{ entry.ThirdRevelant.link }}">{{ entry.ThirdRevelant.title|safe }}</p>
                     
                 </div>
             {% endfor %}
