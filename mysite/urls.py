@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('feedreader.urls', namespace='feedreader')),
     url(r'^feedreader/', include('feedreader.urls', namespace='feedreader')),
 ]
